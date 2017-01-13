@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="step1"></div>
+<a id="step2" href="#">Can't click me.</a>
+<a href="#" onclick="showMe.showClick()">Enable href</a>
+<a href="#" onclick="hideMe.hideClick()">Disable href</a>
+<a href="#" onclick="Game()">Set up game buttons</a>
+<div id="gameContainer"></div>
+
+<script src="script.js"></script>
+<style>
+    #gameContainer{
+        width: 400px;
+        height: 350px;
+        background: #9dcda3;
+
+
+    }
+    #gameContainer button {
+        width: 200px;
+height: 50px;
+        margin: 50px auto auto 100px;
+        color: #fff;
+        font-size: 20px;
+        background: #cda9c4;
+    }
+</style>
+</body>
+</html>

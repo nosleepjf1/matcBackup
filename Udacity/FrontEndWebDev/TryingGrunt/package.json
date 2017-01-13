@@ -1,0 +1,20 @@
+{
+  "name": "tryinggrunt",
+  "version": "1.0.0",
+  "description": "using grunt for the first time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "jonny fewkes",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <script src="golfcard.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+//    var redirect = document.URL;
+//    var swingBySwing = "https://api.swingbyswing.com/v2/oauth/authorize?scope=read&redirect_uri=" + redirect + "&response_type=token&client_id=502dea4c-b2a2-4388-a24a-fb7a4fe0fb00;";
+//    accessToken = getUrlVars().access_token;
+    function initMap() {
+        var myLatLng = {lat: -2.363, lng: 1.044};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+        });
+    }
+
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAyOyXKISHRoDVwraenUE1PHJQSi6AmRU&signed_in=true&callback=initMap"></script>
+</body>
+</html>
+
+
+

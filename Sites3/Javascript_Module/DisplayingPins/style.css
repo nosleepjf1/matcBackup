@@ -1,0 +1,12 @@
+#map {
+    background-image: url("solarSystem%202.jpg");
+    width: 1280px;
+    height: 720px;
+}
+
+.astronaut {
+    position: absolute;
+    background-image: url("cartoon-astronaut%202.png");
+    width: 125px;
+    height: 168px;
+}

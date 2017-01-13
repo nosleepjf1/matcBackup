@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>The internal clock in JavaScript starts at midnight January 1, 1970.</p>
+<p>The getTime() function returns the number of milliseconds since then:</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.getTime();
+    var e = new Date();
+    document.getElementById("demo2").innerHTML = e.getTime() * 2;
+
+
+
+    var ran = Math.floor(Math.random() * e.getTime()) + d.getTime();
+
+
+    var newDate = new Date();
+    newDate.setMilliseconds(ran);
+    document.getElementById("demo3").innerHTML = newDate;
+</script>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+
+}
+
+#gameContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 467px;
+    background-image: url("images/tatooine.jpg");
+    /*margin: 200px auto auto auto;*/
+    transform: translate(-50%, -50%);
+}
+
+.scroll {
+    color: blue;
+}
+
+
+div#b {
+    position: fixed;
+    top:40px;
+    left:100%;
+    width: 400px;
+    height: 400px;
+    background: url('https://s-media-cache-ak0.pinimg.com/236x/e4/4a/9c/e44a9cc6bdbe54504618baaaddf618a8.jpg') 0 0 no-repeat;
+}
+
+#leftBorder{
+    position: relative;
+    height: 467px;
+    width: 300px;
+    left: -300px;
+    z-index: 1;
+    background: yellow;
+}
+
+#rightBorder{
+    position: relative;
+    height: 467px;
+    width: 300px;
+    left: 800px;
+    top: -467px;
+    z-index: 1;
+    background: yellow;
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--<script>screen.orientation.lock('landscape')</script>-->
+</head>
+<body>
+<div id="container">
+    <div id="title">
+        <h1>Golf Score Card</h1>
+    </div>
+    <div class="column">
+        <form class="centering">
+            <label>Enter the number of players:</label> <br>
+            <input type="radio" name="playerAmount" value="1" checked> 1
+            <input type="radio" name="playerAmount" value="2"> 2
+            <input type="radio" name="playerAmount" value="3"> 3
+            <input type="radio" name="playerAmount" value="4"> 4 <br>
+        </form>
+    </div>
+    <div class="column">
+        <form class="centering">
+            <label>Enter how many holes you are playing:</label> <br>
+            <input type="radio" name="holeAmount" value="18" checked> 18
+            <input type="radio" name="holeAmount" value="Front 9"> Front 9
+            <input type="radio" name="holeAmount" value="Back 9"> Back 9
+        </form>
+    </div>
+    <div id="generatedHTML">
+
+    </div>
+    <div id="googleMaps">
+
+    </div>
+    <script src="script.js"></script>
+    <script src="googleMaps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi4L0rQoAR4S0b-dQ-dRX89UV1TEHxTEg&callback=initMap"
+            async defer></script>
+</div>
+</body>
+</html>

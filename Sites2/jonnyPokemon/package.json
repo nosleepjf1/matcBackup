@@ -1,0 +1,18 @@
+{
+  "name": "jonnypokemon",
+  "version": "1.0.0",
+  "description": "my pokemon ",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pokemon",
+    "jonny"
+  ],
+  "author": "jonny f",
+  "license": "ISC",
+  "dependencies": {
+    "pokemon-ts": "^1.0.0"
+  }
+}

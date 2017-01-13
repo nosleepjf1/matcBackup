@@ -1,0 +1,14 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+1: I haven't had any practice converting mockups into websites, and although it was only HTML and not CSS, I found the practice
+very useful.  Also, while perusing the MDN reference I discovered the 'pre' tag which allows you to retain whitespace which
+excited me!
+2: Everything has been fairly easy considering that it is HTML and also taught well. I find CSS more confounding and Javascript is a great challenge to learn.
+3: Nothing yet.
+4: I learned to organize my screen in such a way that I could look at the image and my local webpage at the same time and at the same size.

@@ -1,0 +1,28 @@
+/* add your CSS here */
+
+#container {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 8px 8px 2px lightgray;
+}
+
+.cardFacts {
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    padding: 0 10px 0 10px;
+}
+
+.noBullets {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.bold span{
+    font-weight: bold;
+}

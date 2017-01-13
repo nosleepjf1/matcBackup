@@ -1,0 +1,28 @@
+body {
+    background-color: lightskyblue;
+}
+
+a {
+    font-size: 3em;
+    background-color: cyan;
+    opacity: .4;
+    padding: 5px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gamebox {
+    margin: 0 auto;
+    background-image: url("pic1961827%202.jpg");
+    background-size: cover;
+    height: 796px;
+    width: 796px;
+    border: 10px cornflowerblue ridge;
+    box-shadow: 10px 10px 15px #255187;
+}
+
+#Play {
+
+}

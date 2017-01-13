@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="height=device-height">-->
+    <!--<meta name="viewport" content="width=device-width">-->
+    <title>Title</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi4L0rQoAR4S0b-dQ-dRX89UV1TEHxTEg"></script>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--<script>screen.orientation.lock('landscape')</script>-->
+</head>
+<body>
+<div class="whiteSpace"></div>
+
+<div class="container">
+    <div class="start">
+    <div id="cityDiv">
+        <label>Enter your city &nbsp;</label><br><input id="city" onchange="populateList(this.value)" type="text">
+    </div>
+        <br>
+    <!-- Trigger the modal with a button -->
+    <button type="button" id="buildCardButton" class="btn btn-info btn-lg hide" data-toggle="modal" data-target="#myModal">Build Card</button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                    <h4 class="modal-title">Course Setup</h4>
+                </div>
+                <div class="modal-body">
+                    <p>First Pick your golf course:</p>
+
+                    <select id="courseSelectionMenu" onchange="selectCourse(this.value)">
+                        <option value="Choose a Course">Choose a Course</option>
+                    </select>
+                    <br><br>
+                    <div class="hide" id="numPlayerSelect">
+                        <p>Now choose your number of players (between 1 and 8):</p>
+                        <label>Number of Players </label><input onchange="NumPlayers(this.value)" type="number" placeholder="0">
+                    </div>
+                    <br>
+                    <p id="teeTypeInstructions" class="hide">Lastly, choose your tee box location</p>
+                    <select id="teeTypeMenu" class="hide" onchange="ChooseTeeType(this.value)">
+                        <option value="Choose a Course">Choose your Tee Type</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div id="header" class="hide">
+    <div id="shade">
+    <div id="courseInfo" class="hide">
+    <h1 id="courseName"></h1>
+        <p id="courseAddress"></p>
+        <span id="courseCity"></span><span id="courseState"></span>
+        <p id="coursePhone"></p>
+        <a id="courseWebsite" href="#">See Course Website</a>
+    </div>
+    <div id="currentConditions" class="hide"></div>
+        </div>
+</div>
+    <div class="hide" id="mapText">Course Map</div>
+    <div id="map" class="hide"></div>
+
+<div id="card">
+    <div id="leftCard"></div>
+    <div id="rightCard"></div>
+     <a href="index.html"> <button id="startOver" class="hide btn btn-md btn-success">Start Over</button></a>
+</div>
+
+
+
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

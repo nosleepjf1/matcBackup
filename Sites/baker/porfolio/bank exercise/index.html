@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banking Simulation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!--<script src="script.js"></script>-->
+    <!--<link rel="stylesheet" href="style.css" type="text/css">-->
+</head>
+<body>
+<!--<div id="container">
+  <input type="text" required id="principal" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 46'></input>
+  <div id="errorPrincipal"></div>
+  <input type="text" required id="interest" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 46'></input>
+  <div id="errorInterest"></div>
+  <button type="button" onclick="test()">submit</button>
+
+  <div id="answer"></div>
+</div>
+<script>
+    function test(){
+        var interest = document.getElementById("interest").value;
+        var principal = document.getElementById("principal").value;
+        if(document.getElementById("interest").value == ""){
+            document.getElementById("errorInterest").innerHTML = "<span style='color: red'>Please enter a number value</span>";
+        }
+        if(document.getElementById("principal").value == ""){
+            document.getElementById("errorPrincipal").innerHTML = "<span style='color: red'>Please enter a number value</span>";
+        }
+        if(document.getElementById("interest").value != "" && document.getElementById("principal").value != "") {
+            var answer = Number(interest) + Number(principal);
+            document.getElementById("errorInterest").innerHTML = "";
+            document.getElementById("errorPrincipal").innerHTML = "";
+            document.getElementById("answer").innerHTML = answer.toString();
+        }
+    }
+</script>-->
+
+
+<input type="text" id="myInput">
+<div id="info"></div>
+<script>
+    $(document).ready(function(){
+        $("input").bind("keyup", function(){
+            $("#info").html($("input").val());
+        });
+    });
+    /*$(document).ready(function() {
+        $("input").change(function () {
+
+        });
+    }*/
+</script>
+</body>
+</html>

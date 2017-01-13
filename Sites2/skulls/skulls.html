@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Skull Time</title>
+<style>
+
+body{width: 100%; height: auto; margin: 0;}
+#container{width: 800px; background-color: #333333; height: 500px; margin: 0 auto; overflow: hidden; clear:both;}
+.skull{width: 114px; height: 142px; background-image: url(skull.png); float:left; cursor:pointer;}
+
+
+</style>
+</head>
+
+<body>
+
+
+<div id="container">
+    <input id="counter" type="text" value="0"/>
+    <button onclick="addSkull()">add skull</button>
+    <br>
+	<div class="skull" id="1"></div>
+    <div class="skull" id="2"></div>
+    <div class="skull" id="3"></div>
+
+</div>
+
+<script>
+var skulls = document.getElementsByClassName("skull");
+var count = 0;
+var idCount = 3;
+for(var i = 0; i < skulls.length; i++){
+    skulls[i].setAttribute("onclick", "skullClicked(this)");
+}
+
+function skullClicked(clickedSkull){
+   var myContainer = document.getElementById("container");
+    myContainer.removeChild(clickedSkull);
+    count++;
+    document.getElementById("counter").value = count;
+}
+
+function addSkull(){
+
+    idCount++;
+    document.getElementById("container").innerHTML += "<div class='skull' id=" + idCount + "></div>";
+    document.getElementById("counter").value = count;
+    document.getElementById(idCount).setAttribute("onclick", "skullClicked(this)");
+}
+
+</script>
+
+</body>
+</html>

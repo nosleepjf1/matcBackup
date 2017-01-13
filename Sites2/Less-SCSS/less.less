@@ -1,0 +1,37 @@
+@import 'foo.css';
+@import 'variables';
+@import 'mixins';
+
+.one {
+  .div-maker(5em, 1em, 1em, red);
+}
+
+.two {
+  .div-maker();
+  .flex-column();
+}
+
+.three {
+  .div-maker(100px, 100px, 100px, @bodyColor)
+}
+
+header {
+  height: 300px;
+  background: @bodyColor;
+  .flex-column();
+  .rounded-corners();
+  h1 {
+    font-family: sans-serif;
+  }
+  div {
+    .div-maker(5px, 5px, 5px, yellow);
+    .flex-column();
+  }
+}
+
+footer {
+  div {
+    .div-maker(20px, 20px, 20px, #CCCCCC, 5em)
+  }
+}
+

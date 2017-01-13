@@ -1,0 +1,47 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: lightgrey;
+}
+
+.head {
+    width: 80%;
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 70%;
+    height: 200px;
+    float: left;
+    background: url("img/logo.png");
+    background-size: cover;
+}
+
+nav{
+    width: 28%;
+    float: left;
+}
+
+nav a {
+    float: left;
+    padding-left: 20px;
+}
+
+.hero {
+    background: #67cd88;
+    width: 80%;
+    border-radius: 5px;
+    -webkit-box-shadow: 13px 13px 47px -4px rgba(2,33,17,0.49);
+    -moz-box-shadow: 13px 13px 47px -4px rgba(2,33,17,0.49);
+    box-shadow: 13px 13px 47px -4px rgba(2,33,17,0.49);
+    border: 1px solid #07ad18;
+    min-height: 300px;
+    margin: 0 auto;
+}

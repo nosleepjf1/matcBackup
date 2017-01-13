@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<form>
+    First name:<br>
+    <input id="first" type="text" name="firstname"><br>
+    <div id="firstError" style="color: red;"></div>
+    Last name:<br>
+    <input id="last" type="text" name="lastname">
+    <div id="lastError" style="color: red;"></div>
+    Email: <br>
+    <input id="email" type="email" name="email">
+    <div id="emailError" style="color: red;"></div>
+    <input type="button" onclick="checkForm()" value="Submit">
+</form>
+<div id="success" style="color: cornflowerblue;"></div>
+
+</body>
+</html>

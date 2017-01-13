@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+
+<div id="overlaycontainer">
+    <div id="contentdiv">
+        <div id="golfbanner">
+            <div class="blackbar">
+                <div class="barleft">
+                    <div id="golflogo"></div>
+                    <div id="logotext">Golf Score Card</div>
+                </div>
+                <div class="barright">
+                    <div id="countdown"></div>
+                </div>
+            </div>
+            <div id="golfcourselabel">Sun River Golf Club</div>
+            <div class="column">
+                    <label>Enter the number of players:</label> <br>
+                    <input type="number" id="numPlayers">
+                     <br>
+            </div>
+            <div class="column">
+                <form id="myForm">
+                    <label>Enter how many holes you are playing:</label> <br>
+                    <input type="radio" name="holeAmount" id="fullGame" value="18" checked> 18
+                    <input type="radio" name="holeAmount" id="frontHalf" value="9"> Front 9
+                    <input type="radio" name="holeAmount" id="lastHalf" value="9"> Back 9
+                </form>
+            </div>
+            <div class="column">
+                <button type="button" onclick="buildcard()">build card</button>
+            </div>
+        </div>
+        <div id="scorecard">
+
+            <div id="leftcard"></div>
+            <div id="rightcard"></div>
+        </div>
+    </div>
+</div>
+
+<div id="container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

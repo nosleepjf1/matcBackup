@@ -1,0 +1,10 @@
+body {
+    width: 100%;
+}
+
+#sliderContainer{
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #0B3135;
+}

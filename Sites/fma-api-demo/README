@@ -1,0 +1,17 @@
+
+Demo of the APIs for the Free Music Archive and The Echo Nest
+
+  http://apidemo.freemusicarchive.org/
+
+  by Mike Adler adler@wfmu.org
+
+1) request FMA api key @ http://freemusicarchive.org/api/agreement
+2) request EN api key @ http://developer.echonest.com/account/register
+3) put your own api keys into the api_key variables in js/fma.js and js/echonest.js
+4) hackety hackety
+5) observe the license restrictions of the individual works
+6) show your work
+
+This modest player demonstrates how one might use the APIs of the Free
+Music Archive and The Echo Nest to create a similarity-based HTML5
+audio player.

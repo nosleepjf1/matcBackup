@@ -1,0 +1,119 @@
+
+body, td, th, font, p, h1, h2, h3, h4, h5, h6, input, textarea, select {
+  font-family: Trebuchet MS,Lucida Grande,Arial,Helvetica,sans-serif;
+}
+
+div#whole-page {
+  margin: 10px 0px 0px 5px;
+}
+
+#artist-search-form {
+  float: left;
+  margin: 0px 20px 0px 0px;
+}
+
+input {
+  font-size:  100%;
+}
+
+.fma-artist {
+  padding: 4px 4px 4px 35px;
+  margin-top: 5px;
+  background-color: #AAAAAA;
+  float: left;
+  width: 200px;
+  height: 20px;
+  white-space:nowrap;
+  overflow: hidden;
+  background-image: url('../images/plus_24.png');
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  color: #DDD;
+  font-style:italic;
+}
+
+.fma-artist:hover {
+  background-color: #FFD073;
+  color: #222;
+}
+
+img.add-artist {
+  padding: 5px 10px 0px 5px;
+  height: 16px;
+}
+
+.fma-track {
+  padding: 4px 4px 4px 34px;
+  margin-top: 5px;
+  background-color: #A66E00;
+  background-image: url('../images/video_play_24.png');
+  background-repeat: no-repeat;
+  background-position: 1% 50%;
+  /*background-position: 0 -64px;*/
+  float: left;
+  /*height: 20px;*/
+  width: 450px;
+  overflow: hidden;
+  color: #DDD;
+}
+
+.fma-track:hover {
+  background-color: #FFD073;
+  color: #222;
+}
+
+.info-button {
+  height: 20px;
+}
+
+.track_title {
+  font-weight: bold;
+}
+.artist_name {
+  font-style:italic;
+}
+
+.clear {
+  clear: both;
+}
+
+#search-input {
+  float: left;
+  width: 120px;
+}
+
+div#spinner {
+  float: left;
+  margin: 0 0 0 10px;
+  visibility: hidden;
+}
+
+#player {
+  position:absolute;
+  top: 10px;
+  left: 270px;
+  width: 450px;
+}
+
+#now-playing {
+  width: 400px;
+}
+
+/*
+ http://colorschemedesigner.com/#0X11Tw0w0w0w0
+ FFAA00 , FFBF40, FFD073, A66E00
+*/
+
+#demo-info {
+  position: fixed;
+  bottom: 0px;
+  padding: 10px 0px 5px 5px;
+  background-color: #FFF;
+  height: 30px;
+  width: 95%;
+}
+
+#soundmanager-debug {
+  /* SM2 debug container (optional, makes debug more useable) */
+  position:absolute;position:fixed;*position:absolute;bottom:10px;right:10px;width:50em;height:18em;overflow:auto;background:#fff;margin:1em;padding:1em;border:1px solid #999;font-family:"lucida console",verdana,tahoma,"sans serif";font-size:x-small;line-height:1.5em;opacity:0.9;filter:alpha(opacity=90);z-index:99;
+}

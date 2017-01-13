@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FMA Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.6.2.js"></script>
+  <script src="js/fma.js"></script>
+  <script src="js/echonest.js"></script>
+  <script src="js/fma-demo.js"></script>
+  <script src="js/soundmanager2.js"></script>
+<script>
+soundManager.url = 'swf';
+soundManager.debugFlash = false;
+soundManager.debugMode = false;
+soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+//soundManager.useFlashBlock = false; // optionally, enable when you're ready to dive in
+soundManager.onready(function() {
+});
+</script>
+
+  <script type="text/template" id="artist-template">
+    <a class="artist-name"><%= name %></span>
+  </script>
+
+  <script type="text/template" id="searcher-template">
+  </script>
+
+    <script type="text/javascript">
+    </script>
+
+</head>
+<body>
+<div id="whole-page">
+<div id="artist-search-form">
+Search The Echo Nest for Artist:
+    <form id="search-form">
+      <input type="text" id="search-input" autocomplete="off" placeholder="artist name">
+<div id="spinner">(waiting...)</div>
+    </form>
+<div id="search-results">
+<div id="fma-artists"></div>
+</div>
+</div>
+
+<div id="player">
+  <div id="controls">
+    <img src="images/video_pause_24.png" class="control-button" id="stop-button">
+    <img src="images/video_play_24.png" class="control-button" id="play-button">
+    <div id="now-playing">&nbsp;</div>
+  </div>
+  <div id="tracks">
+  </div>
+</div>
+
+</div> <!-- end of id="whole-page" -->
+
+<div id="demo-info">
+Demo of the APIs for the <a href="http://freemusicarchive.org/api" target="_blank">Free Music Archive</a> and <a href="http://developer.echonest.com/docs" target="_blank">The Echo Nest</a>. <a href="build/fma-api-demo.tar.gz">Download this code</a>
+</div>
+</body>
+
+</html>
